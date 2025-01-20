@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import UserInfoContext from "./context/UserInfoContext";
-import Post from "./components/Post";
+import BlogPage from "./components/BlogPage";
 
 function App() {
   const userInfo = {
@@ -12,8 +12,7 @@ function App() {
   return (
     <div>
       <UserInfoContext.Provider value={userInfo}>
-        <h1>Blog</h1>
-        <Post></Post>
+        <BlogPage></BlogPage>
       </UserInfoContext.Provider>
     </div>
   );
